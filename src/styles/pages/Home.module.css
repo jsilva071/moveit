@@ -16,3 +16,18 @@
   gap: 6.25rem;
   align-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: initial;
+  }
+
+  .container section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .container > section > div:first-child {
+    margin-top: 3rem;
+  }
+}
